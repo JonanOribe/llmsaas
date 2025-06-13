@@ -7,6 +7,7 @@ import {
     TableHeader,
     TableRow,
 } from "@/components/ui/table"
+import { cn } from "@/lib/utils";
 
 interface CompanionsListProps {
     title: string;
@@ -16,7 +17,7 @@ interface CompanionsListProps {
 
 const CompanionList = ({title,companions,classNames}: CompanionsListProps) => {
     return (
-        <article>
+        <article className={cn("companion-list", classNames)}>
             <h2>Recent Session</h2>
 
             <Table>
