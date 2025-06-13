@@ -2,6 +2,7 @@ import CompanionCard from '@/components/companionCard'
 import CompanionsList from '@/components/companionsList'
 import CTA from '@/components/cta'
 import { Button } from '@/components/ui/button'
+import { recentSessions } from '@/constants'
 import React from 'react'
 
 const Page = () => {
@@ -31,11 +32,14 @@ const Page = () => {
           topic="Neural Network of the Brain"
           subject="science"
           duration={15}
-          color="#ffda6e"
+          color="#BDE7FF"
           />
       </section>
       <section className='home-section'>
-        <CompanionsList/>
+        <CompanionsList
+        title="Recently completed sessions"
+        companions={recentSessions}
+        classNames="w-2/3 max-lg:w-full"/>
         <CTA />
       </section>
     </div>
