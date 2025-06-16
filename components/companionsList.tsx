@@ -18,7 +18,7 @@ interface CompanionsListProps {
 const CompanionList = ({title,companions,classNames}: CompanionsListProps) => {
     return (
         <article className={cn("companion-list", classNames)}>
-            <h2>Recent Session</h2>
+            <h2 className="font-bold text-3xl">Recent Session</h2>
 
             <Table>
                 <TableCaption>A list of your recent invoices.</TableCaption>
