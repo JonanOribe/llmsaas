@@ -1,5 +1,5 @@
-import CompanionCard from '@/components/companionCard'
-import CompanionsList from '@/components/companionsList'
+import CompanionCard from '@/components/CompanionCard'
+import CompanionsList from '@/components/CompanionsList'
 import CTA from '@/components/cta'
 import { Button } from '@/components/ui/button'
 import { recentSessions } from '@/constants'
